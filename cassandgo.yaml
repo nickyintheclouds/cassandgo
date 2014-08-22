@@ -1,0 +1,35 @@
+---
+# Multi-DC configuration
+MonoDC:
+- datacenter: DC1
+  region: eu-west
+  zone: 1
+  nodes: 3
+  node_type: m3.large
+  nb_seeds_per_dc: 1
+  opscenter: yes
+
+MultiDC:
+- datacenter: DC1
+  region: eu-west
+  zone: 1
+  nodes: 5
+  nb_seeds_per_dc: 2
+  node_type: m3.large
+  opscenter: yes
+
+- datacenter: DC2
+  region: us-east
+  zone: 1
+  nodes: 5
+  nb_seeds_per_dc: 2
+  node_type: m3.large
+  opscenter: no
+
+- datacenter: DC3
+  region: us-west
+  zone: 1
+  nodes: 5
+  nb_seeds_per_dc: 2
+  node_type: m3.large
+  opscenter: no
