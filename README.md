@@ -435,11 +435,18 @@ For each conf, you have to list all Datacenters involved and their settings :
 Now, you can deploy your cluster :
 
 ```console
-./cassandgo.py create MultiDC
+$ ./cassandgo.py create MultiDC
 ```
 
 > **WARNING** : During the cluster creation, the tool connects to node via ssh and then **ssh fingerprints** are automatically added to your **.ssh/known_hosts** file. If you create, destroy many clusters, you could then have conflicts with these previous fingerprints. A good tip is to clean previous ec2 IPs from your .ssh/known_hosts file before creating your cluster.
 
+# Destroy a Cluster
+
+If you want to terminate all instances of your cluster (and stop billing :-), just type the following command with the name of your cluster :
+
+```console
+$ ./cassandgo.py destroy MultiDC
+```
 
 # Test the cluster
 
