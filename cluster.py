@@ -213,7 +213,6 @@ def createCluster(infosDC,cluster_name):
 				server.startDataStaxAgent(cmd)
 				time.sleep(5)
 
-	print "bOpsCenterExists : ",bOpsCenterExists
 	if bOpsCenterExists:
 		print 
 		print "Starting OpsCenter..."
