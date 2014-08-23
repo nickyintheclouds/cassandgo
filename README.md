@@ -106,21 +106,6 @@ DC3 : Node 2 in us-west-1c
 DC3 : Node 3 in us-west-1a
 DC3 : Node 4 in us-west-1c
 DC3 : Node 5 in us-west-1a
-DC1 : Node 1 in eu-west-1a
-DC1 : Node 2 in eu-west-1b
-DC1 : Node 3 in eu-west-1c
-DC1 : Node 4 in eu-west-1a
-DC1 : Node 5 in eu-west-1b
-DC2 : Node 1 in us-east-1a
-DC2 : Node 2 in us-east-1c
-DC2 : Node 3 in us-east-1d
-DC2 : Node 4 in us-east-1a
-DC2 : Node 5 in us-east-1c
-DC3 : Node 1 in us-west-1a
-DC3 : Node 2 in us-west-1c
-DC3 : Node 3 in us-west-1a
-DC3 : Node 4 in us-west-1c
-DC3 : Node 5 in us-west-1a
 
 Updating cassandra.yaml and DataStax agent conf on all nodes...
 --------------------------------------------------------------------------------
