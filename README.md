@@ -463,7 +463,7 @@ then, we will init our keyspace with a **NetworkTopology strategy** and a **repl
 ```console
 cqlsh
 
-cqlsh> CREATE KEYSPACE "NetworkTopologyStratRF3RF3RF3" WITH REPLICATION = {'class' : 'NetworkTopologyStrategy', 'eu-west' : 3, 'us-east' : 3, 'us-west' : 3};
+cqlsh> CREATE KEYSPACE multidckeyspace WITH REPLICATION = {'class' : 'NetworkTopologyStrategy', 'eu-west' : 3, 'us-east' : 3, 'us-west' : 3};
 
 cqlsh> use multidckeyspace ;
 ```
