@@ -131,7 +131,6 @@ def createCluster(infosDC,cluster_name):
 		cluster['InternalSeeds'] = list()
 		cluster['ExternalSeeds'] = list()
 		for instance in cluster['instances']:
-			print cluster['datacenter'] + ' : Node ' + instance['index'] + ' in ' + instance['AZ']
 			if ((cluster['opscenter'] == True) and (instance['index'] == '1')):
 				cluster['opsCenterServer'] = {'publicIP':instance['instance'].ip_address,'privateIP':instance['instance'].private_ip_address,'instance':instance['instance'],'regionZone':instance['region']+'-'+instance['zone']}
 				bOpsCenterExists = True
